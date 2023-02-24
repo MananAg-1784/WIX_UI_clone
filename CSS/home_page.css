@@ -1,0 +1,255 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --side-margin: 80px;
+    --green-color:rgb(3, 89, 70);
+    --blue-color:#0059ffe4;
+}
+
+body::-webkit-scrollbar{
+    width: 8px;
+}
+body::-webkit-scrollbar-track{
+    margin: 2px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background:rgba(91, 91, 91, 0.311);
+}
+
+
+/*Find a tempelate*/
+#search_template{
+    justify-content: space-between;
+    height: 16vh;
+    border-bottom: 1px solid #0000001d;
+    padding: 0px var(--side-margin);
+}
+
+#search_template div:first-child{
+    font-size: 2rem;
+    font-weight: 600;
+    /* letter-spacing: 0.01em; */
+    color: black;
+}
+
+#search_bar{
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    padding: 0px 5px;
+}
+
+#search_bar:hover{
+    border-bottom: 1px solid var(--blue-color);
+}
+
+#search_bar:has( input:focus ){
+    border-bottom: 2px solid var(--blue-color);
+}
+
+#search_bar input:focus{
+    outline: none;
+    width: 300px;
+}
+
+#search_bar input{
+    transition:0.5s;
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    border: none;
+    width: 220px;
+}
+
+#search_bar img{
+    height: 15px;
+    padding-bottom: 5px;
+}
+
+
+/*Help choosing a tempelate*/
+
+#end{
+    /* margin-top: 50px; */
+
+    padding: 0px 100px;
+    height: 50vh;
+    justify-content: center;
+    background-color: var(--green-color);
+}
+
+#end div:nth-child(1){
+    font-size: 3.8rem ;
+    font-weight: 600;
+}
+
+#end div:nth-child(2){
+    font-size:1.5rem;
+}
+
+#end div{
+    color: white;
+    padding: 15px;
+}
+
+#end button:hover{
+    background-color: rgba(255, 255, 255, 0.868);
+}
+
+#end button{
+    padding: 15px 35px;
+    margin: 30px;
+    letter-spacing: 0.03em;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.2rem;
+    background-color: white;
+    color: var(--green-color);
+}
+
+
+/*Navigation 2 type of website*/
+
+/*Fixing the navigation to top of the screen*/
+#website_type{
+    position:sticky;
+    top: 0px;
+}
+
+#website_type{
+    border-bottom: 1px solid #0000001d;
+    background-color: white;
+    box-shadow: 0px 5px 8px #47474719;
+    font-size: 1.1rem;
+    justify-content: space-between;
+    padding: 0px 60px;
+}
+
+#website_type div button:hover, #website_type div a:hover{
+    cursor: pointer;
+    color:var(--blue-color);
+    border-bottom: 2px solid var(--blue-color) !important;
+}
+
+#website_type div > *{
+    padding: 15px 5px;
+    margin: 0px 12px;
+    border-bottom: 2px solid white !important;
+}
+
+#website_type div button{
+    font-size: 1.1rem;
+    /* padding: 10px 20px; */
+    background-color: white;
+    border: none;
+}
+
+#website_type div button img{
+    height: 8px;
+    padding-left: 2px;
+}
+#website_type div button:hover img:first-child,#website_type div button:focus img:first-child{
+    display: none;
+}
+
+#website_type div button img:nth-child(2){
+    display:none;
+}
+#website_type div button:hover img:nth-child(2){
+    display:inline;
+    transform: rotate(180deg);
+    padding: 0px;
+    padding-right: 2px;
+}
+
+
+
+/*Drop Down 2*/
+
+#drop_down_2{
+    position: absolute;
+    z-index: 10;
+    top: 54px;
+}
+
+#drop_down_2 > div{
+    padding: 20px 5px;
+    background-color: white;
+    height: max-content;
+    align-items: flex-start;
+    display: inline-flex;
+    box-shadow: 0px 3px 10px rgb(70 70 70 / 23%);
+}
+
+#drop_down_2 > div ul li:hover{
+    color: var(--blue-color);
+    cursor: pointer;
+}
+#drop_down_2 > div ul li:first-child:hover{
+    color: black;
+}
+#drop_down_2_heading{
+    font-weight:600 ;
+    color: black;
+    font-size: 1rem;
+}
+
+#drop_down_2 > div ul{
+    list-style: none;
+    font-size: 1rem;
+    align-items: flex-start;
+    text-decoration: none;
+    border-left: 2px solid rgba(93, 93, 93, 0.507);
+    padding: 0px;
+    padding-left:15px;
+    padding-right: 20px;
+}
+
+#drop_down_2 > div ul:first-child{
+    border: none !important;
+}
+
+#drop_down_2 div li{
+    padding-bottom: 7px !important;
+}
+
+#drop_down_2 a{
+    padding: 0px !important;
+    margin: 0px !important;
+    border: none !important;
+    position: static !important;
+    display: inline !important;
+    font-size: 1rem !important;
+}
+
+/*Margin and position for each drop down*/
+#drop_down_2:has( #business_services ){
+   left: 50px;
+}
+
+#drop_down_2:has( #store){
+    left: 240px;
+}
+
+#drop_down_2:has( #creative){
+    left: 330px;
+}
+
+#drop_down_2:has( #blog){
+    left: 580px;
+}
+
+#drop_down_2:has( #community){
+    left: 440px;
+}
+
+#drop_down_2:has( #collections ){
+    right: 20px;
+}
+
+#drop_down_2:has( #profile_options ){
+    right: 50px;
+    top: 60px;
+    font-weight: 500;
+}

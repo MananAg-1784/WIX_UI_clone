@@ -1,0 +1,244 @@
+
+:root{
+    --grey-color: rgba(0, 0, 0, 0.941);
+    --light-gray:rgba(0, 0, 0, 0.722);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: var(--grey-color);
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+}
+.row{
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+}
+
+a{
+    color: rgba(0, 89, 255, 0.895);
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+/*Navigation images*/
+#navigation{
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    align-items: center;
+    margin-bottom: 0px;
+    width: 100vw;
+}
+
+#navigation #close img{
+    height: 20px;
+}
+#navigation #close img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+#navigation #logo img{
+    height: 35px;
+}
+
+/*Heading */
+header{
+    align-items: center;
+}
+
+header h1{
+    font-size: 4rem;
+    padding-bottom: 15px;
+}
+
+header span{
+    font-size: 1.2rem;
+}
+
+
+/*Footer -- policies*/
+footer{
+    align-items: center;
+    margin: 20px;
+}
+
+footer p{
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    color: rgba(27, 27, 27, 0.875);
+    padding-bottom: 10px;
+}
+
+footer p a{
+    text-decoration: underline;
+    color: var(--light-gray);
+}
+footer p p{
+    width: 10px;
+}
+
+footer span
+{
+    border-bottom: 1px solid var(--light-gray);
+    width: 38%;
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+
+/* sign up -- section*/
+section{
+    align-items: center;
+    justify-content: center;
+    margin: 35px;
+    font-size: 1.2rem;
+}
+
+section div{
+    align-items: flex-start;
+    padding: 10px 20px;
+}
+
+section #information input{
+    padding: 10px 8px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.403);
+    padding-bottom: 8px;
+    font-size: 1.15rem;
+    margin: 15px 0px;
+    width: 300px;
+}
+
+#information input:hover::-webkit-input-placeholder{
+    transition: 0.2s;
+    font-size: 1.1rem;
+}
+
+section #information input:focus{
+    outline: none;
+    border-color: rgba(0, 89, 255, 0.895);
+    transition: 0.1s;
+}
+
+section #information input:hover{
+    border-color: black;
+    transition: 0.2s;
+}
+
+section #information a{
+    border: 1px solid rgba(0, 89, 255, 0.895);
+    padding: 12px 40px;
+    border-radius: 35px;
+    /* font-size: 1.2rem; */
+    margin: 18px 0px;
+    font-size: 1.1rem;
+}
+
+section #information a:hover{
+    background-color: rgba(0, 89, 255, 0.895);
+    color: white;
+    transition: 0.2s;
+}
+
+section #horizontal_bar{
+    color: var(--light-gray);
+    /* align-items: center; */
+    opacity: 0.6;
+    width: 20px;
+    margin: 0px 20px;
+}
+section #horizontal_bar div{
+    border-left: 1px solid var(--light-gray);
+    padding: 400%;
+    margin: 5px;
+}
+
+/*Sign_up using google or facebook*/
+
+section #sign_up {
+    padding-left: 10px;
+}
+
+section #sign_up div:hover{
+    cursor: pointer;
+}
+
+section #sign_up div{
+    align-items: center;
+    padding: 2px;
+    margin: 8px 0px;
+}
+
+section div p{
+    color: white;
+    font-size: 0.9rem;
+    width: 190px;
+    text-align: center;
+    padding: 10px 30px;
+
+}
+section #sign_up div img{
+    height: 20px;
+    background-color: white;
+    padding: 10px;
+}
+
+section #sign_up #google{
+    background-color: #4285f4;
+}
+
+section #sign_up #facebook{
+    background-color: #3b5998;
+}
+
+
+/*Extra CSS for log in*/
+
+#content{
+    justify-content: center;
+    height: 95vh;
+}
+
+#more_info{
+    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    width: 320px;
+}
+#more_info div{
+    padding: 0px;
+    color: var(--light-gray);
+}
+
+#more_info div label{
+    color: var(--light-gray);
+}
+
+#more_info div input{
+    width: 10px !important;
+    margin: 0px;
+    margin-right: 5px;
+    padding:0px;
+    align-self: center;
+}
+
+#information #continue{
+    padding: 10px 25px !important;
+    margin: 40px 0px !important;
+}

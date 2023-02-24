@@ -1,0 +1,155 @@
+:root{
+    --blue-color: #0059ffe4;
+}
+
+#templates{
+    padding: 50px 80px;
+    align-items: normal;
+    background-color: rgba(233, 235, 255, 0.458);
+}
+
+#heading_templates{
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+#heading_templates > p{
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 600;
+}
+
+#sort_by_dropdown span{
+    padding:0px 5px;
+}
+#sort_by_dropdown > span{
+    font-weight: 600;
+    color: black;
+}
+
+#dropdown{
+    height: 8px;
+    padding-top: 1px;
+}
+
+#templates_grid::-webkit-scrollbar{
+    color: black;
+    width: 5px;
+}
+#templates_grid::-webkit-scrollbar-track{
+    border-radius: 20px;
+    background:rgba(91, 91, 91, 0.066);
+}
+
+#templates_grid::-webkit-scrollbar-thumb{
+    background:rgba(91, 91, 91, 0.159);
+}
+
+
+#templates_grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:40px;
+    overflow-y: scroll;
+    height: 85vh;
+    padding-right: 15px;
+}
+
+
+.template{
+    align-items: normal;
+    border-radius: 5px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.template_top{
+    background-color: rgba(165, 165, 165, 0.392);
+    padding-left: 5px;
+}
+
+.template_top p{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 5px 2px;
+}
+
+.template_name{
+    padding: 12px 0px;
+    font-size: 1.05rem;
+}
+
+.template_image{
+    height: 226px;
+    /* background-image: url('../templates_images/coming_soon.webp'); */
+    background-size: cover;
+    background-position: center;
+    width: inherit;
+}
+
+.template_view{
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.903);
+    height: inherit;
+    display: none;
+}
+
+.template_view button{
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 40px;
+    margin: 12px 0px;
+    transition: 0.1s;
+    box-sizing: border-box;
+    border: 1px solid var(--blue-color) !important;
+}
+
+.template_view button:first-child, .template_view button:last-child:hover{
+    background-color: var(--blue-color);
+    color: white;
+}
+
+.template_view button:last-child{
+    background-color: white;
+    color: var(--blue-color);
+}
+
+.template_view button:first-child:hover{
+    background-color: #0059ffb8 ;
+}
+
+.template_image:hover .template_view{
+    display:flex;
+    z-index: 10;
+    box-shadow: inset 0px -2px 10px rgba(194, 194, 194, 0.326);
+}
+
+/*Adding images to templates*/
+
+#templates_grid .template:nth-child(1) .template_image,#templates_grid .template:nth-child(9) .template_image{
+    background-image: url('../templates_images/coming_soon.webp');
+}
+#templates_grid .template:nth-child(2) .template_image, #templates_grid .template:nth-child(12) .template_image{
+    background-image: url('../templates_images/tempelate\ 1.webp');
+    
+}
+#templates_grid .template:nth-child(3) .template_image, #templates_grid .template:nth-child(7) .template_image{
+    background-image: url('../templates_images/tempelate_2.webp');
+    
+}
+#templates_grid .template:nth-child(4) .template_image, #templates_grid .template:nth-child(10) .template_image{
+    background-image: url('../templates_images/Tempelate_3.webp');
+    
+}
+#templates_grid .template:nth-child(5) .template_image, #templates_grid .template:nth-child(11) .template_image{
+    background-image: url('../templates_images/tempelate\ 4.webp');
+    
+}
+#templates_grid .template:nth-child(6) .template_image, #templates_grid .template:nth-child(8) .template_image{
+    background-image: url('../templates_images/Tempelate\ 5.webp');
+    
+}

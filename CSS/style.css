@@ -1,0 +1,232 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    text-decoration: none;
+    list-style: none;
+    color: #000000f7
+}
+
+:root{
+    --blue-color: rgba(0, 89, 255, 0.895);
+}
+
+.flex{
+    display: flex;
+}
+
+
+/*Header -- sign up page*/
+
+header{
+    height : 121vh;
+    color: #000000f7;
+    background-image: url("../images/header_background.png");
+    background-size: cover;
+}
+
+header #logo{
+    margin : 25px;
+    margin-left: 80px;
+    position: absolute;
+}
+
+header #logo img{
+    height: 30px;
+}
+
+header #content{
+    flex-direction: column ;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+header #content #heading{
+    font-size: 3.9rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    transform: scale(0.98, 0.93) ;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    letter-spacing: -0.01em;
+}
+
+header #content #header_foot{
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin-top: 30px;
+    /* transform: scale(1, 0.90) ; */
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.827);
+}
+
+header #content #sign_up_email{
+    align-items: baseline;
+}
+
+header #content #sign_up_email input:focus {
+    outline: none;
+}
+
+header #content #sign_up_email input{
+    font-size: 1.2rem;
+    padding: 0px 15px;
+    border: none;
+    width: 300px;
+    margin: 0px 25px;
+    height: 40px;
+    transform: scale(1.01,1);
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid var(--blue-color);
+}
+
+header #content #sign_up_email a{
+    padding: 15px 35px;
+    border-radius: 30px;
+    background-color: var(--blue-color);
+    margin-right: 20px;
+    margin: 20px 0px;
+    color: white;
+    font-size: 1.7rem; 
+    align-items: center;
+    transform: scale(1,0.99);
+    letter-spacing: 0.02em;
+    /* border: 1px solid black; */
+}
+
+header #content #sign_up_email a img{
+    width: 35px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+header #content #sign_up_email a:hover{
+    background-color: rgba(23, 104, 255, 0.84);
+    transition: 0.5s;
+    cursor: pointer;
+}
+header #content #sign_up_email a:hover img{
+    animation: linear;
+    animation-duration: 1s;
+    animation-name: run;
+    animation-iteration-count: 1;
+    /* transition: 1s; */
+}
+
+@keyframes run {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 15px;
+    }
+    100% {
+      left: 0;    
+    }
+  }
+
+
+/*Section about the features*/
+section{
+    height: 100vh;
+}
+
+section div{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 35%;
+    padding: 20px;
+}
+
+section div p{
+    padding: 15px 0px;
+}
+
+#section_1{
+    background-image: url("../images/section_1.png");
+    background-size: cover;
+    padding-left: 9%;
+}
+#section_2{
+    background-image: url("../images/section_2.png");
+    background-size: cover;
+    justify-content: flex-end;
+    padding-right: 10%;
+    
+}
+#section_3{
+    background-image: url("../images/section_3.png");
+    background-size: cover;
+    padding-left: 9%;
+}
+
+.heading{
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+}
+
+.description{
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+.button{
+    margin: 30px 0px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: var(--blue-color);
+    color: white;
+    font-size: 1.4rem; 
+    transform: scale(1,0.99);
+    letter-spacing: 0.02em;
+}
+
+.button:hover{
+    background-color: rgba(23, 104, 255, 0.84);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/*Footer text*/
+#footer_text{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-image: url("../images/footer_image.png");
+}
+
+#footer_text p{
+    font-size: 4rem;
+    font-weight: 600;
+    width: 45%;
+    line-height: 5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Footer*/
+footer{
+    padding: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer div{
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+footer div a:nth-child(1)
+{
+    padding: 3px 12px;
+    margin-right: 12px;
+    border-right: 1px solid rgba(48, 48, 48, 0.86);
+}
+
+#content_2 a img{
+    height: 30px;
+}

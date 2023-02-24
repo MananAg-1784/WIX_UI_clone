@@ -1,0 +1,208 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: var(--grey-color);
+}
+
+:root{
+    --blue-color: #0059ffe4;
+    --grey-color: rgba(35, 35, 35, 0.871);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+.row{
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+}
+
+/*Navigation CSS*/
+header{
+    z-index: 15;
+    justify-content: space-between;
+    box-shadow: 0px 5px 8px #47474719;
+    border: 1px solid #0000001b;
+    font-size: 1.1rem;
+    padding: 0px 45px;
+}
+
+#navigation #logo{
+    height: 35px;
+}
+
+#navigation div{
+    padding: 0px 30px;
+}
+#navigation div a, #profile div a, #navigation div button{
+    padding: 25px 5px;
+    margin: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    background-color: white;
+    font-size: 1.1rem;
+    border-bottom: 2px solid white;
+}
+
+#navigation div a img,#navigation div button img{
+    height: 10px;
+    padding-left: 5px;
+    padding-top: 2px !important;
+}
+#navigation div button img:nth-child(2){
+    display: none;
+}
+
+#navigation div button:hover img:nth-child(1){
+    display: none;
+}
+
+#navigation div button:focus img{
+    transform: rotate(180deg);
+    padding: 0px;
+    padding-right: 5px !important;
+    padding-bottom: 2px !important;
+}
+
+#navigation div button:hover img:nth-child(2){
+    display:inline;
+}
+
+header button:hover:has( img:nth-child(2)){
+    border-bottom: 2px solid var(--blue-color) !important;
+}
+
+header a:hover, header button:hover{
+    color: var(--blue-color);
+    transition: 0.2s;
+}
+
+/* adding the padding of profile image for drop down menu*/
+#profile div a:nth-child(3){
+    padding: 15px 0px;
+}
+
+#profile_pic{
+    background-color: black;
+    border-radius: 50%;
+    height: 35px;
+    margin: 0px;
+    width: 35px;
+}
+
+/* making the sub navigation of each navgation item*/
+
+.nav2 a:hover, #nav2 a:hover *{
+    color: var(--blue-color) !important;
+    cursor: pointer;
+}
+
+.nav2 > div{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: -3px 3px 5px #00000024;
+    z-index: 10;
+    /* height: 500px; */
+    width: fit-content;
+    position: absolute;
+    background-color: white;
+    display: none;
+}
+
+#content{
+    height: 500px;
+    align-items: normal;
+    overflow: hidden;
+}
+
+#creation {
+    margin-left: 200px;
+    /* display: none; */
+}
+#business{
+    margin-left: 350px;
+}
+#growth{
+    margin-left: 450px;
+    height: fit-content;
+}
+#resources{
+    margin-left: 600px;
+    height: fit-content;
+}
+#enterprise{
+    margin-left: 700px;
+    height: fit-content;
+}
+
+.sub_nav_heading{
+    font-size: 1.15rem;
+    color: black;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+.sub_nav{
+    margin: 20px 40px;
+    margin-top: 25px;
+    /* flex-wrap: wrap; */
+    overflow-y: scroll;
+}
+.sub_nav::-webkit-scrollbar{
+    display: none;
+}
+
+.sub_nav li{
+    width: 300px;
+    margin-bottom: 25px;
+}
+
+.sub_nav_description{
+    padding: 10px 0px;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.essentials{
+    padding: 40px;
+    background-color: rgba(177, 177, 177, 0.21);
+    align-items: flex-start !important;
+    justify-content: space-between;
+}
+
+.essentials div{
+    align-items: flex-start;
+    width: 200px;
+}
+
+#become_partner{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: black;
+    align-items: flex-start;
+}
+
+#become_partner img{
+    height: 15px;
+    align-self: flex-end;
+}
+
+#become_partner:hover img:nth-child(2){
+    display: none;
+}
+
+#become_partner img:nth-child(3)
+{
+    display: none;
+}
+
+#become_partner:hover img:nth-child(3)
+{
+    display: inline;
+}
